@@ -55,10 +55,18 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Contribution Guidelines
 
+### Create a new branch
+
+```bash
+git checkout -b feature/issue_no.issue_name
+```
+example: git checkout -b feature/11.Code_Setup_venkat
  Add your name below and commit as "I love react - [your name]" as your first commit by following these contribution guidelines
 ## Contributors
 
 - Jaya Simha Reddy Nandyala
+- Venkat Reddy Nandyala
+
 ## What is the use of this project
 
 This Project is a Simple ReactJS Project which is used to build a social media application by learning the following
