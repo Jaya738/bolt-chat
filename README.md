@@ -25,7 +25,13 @@ Clone the project into local
 git clone https://github.com/Jaya738/bolt-chat.git
 ```
 
-Install all the npm packages. Go into the project folder and type the following command to install all npm packages
+Go into the project folder 
+
+```bash
+cd bolt-chat
+```
+
+Type the following command to install all npm packages
 
 ```bash
 npm install
