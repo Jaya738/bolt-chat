@@ -1,10 +1,13 @@
 import React from "react";
+import { BsFillChatRightTextFill } from "react-icons/bs";
+import { Button } from "react-bootstrap";
 
 const Header = () => {
 	return (
 		<div>
 			<p>
-				Edit <code>src/App.js</code> and save to reload.
+				<BsFillChatRightTextFill />
+				Bolt
 			</p>
 		</div>
 	);
@@ -12,14 +15,9 @@ const Header = () => {
 
 export const ReactLink = () => {
 	return (
-		<a
-			className="App-link"
-			href="https://reactjs.org"
-			target="_blank"
-			rel="noopener noreferrer"
-		>
+		<Button className="App-link" target="_blank" rel="noopener noreferrer">
 			Learn React
-		</a>
+		</Button>
 	);
 };
 
