@@ -1,0 +1,17 @@
+.app-header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.app-header > .header-icons > svg {
+    margin: 0px 12px;
+}
+
+.app-header > .header-logo > img {
+    width: 80px;
+}
