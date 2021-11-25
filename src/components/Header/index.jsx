@@ -8,7 +8,8 @@ const Header = () => {
 	return (
 		<div className="app-header">
 			<div className="header-logo">
-				<img src={logo} alt='BOLT' />
+				{/* <img src={logo} alt='BOLT' /> */}
+				BOLT
 			</div>
 			<div className="header-icons">
 				<BsFillChatRightTextFill />
