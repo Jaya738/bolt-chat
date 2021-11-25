@@ -1,9 +1,15 @@
 import "./posts.css";
+import Post from './Post';
+import { postsData } from "../../models/posts";
 
-function PostsList() {
+const PostsList = () => {
 	return (
 		<div className="posts-list">
-            PostsList
+			{postsData.map(post => {
+				return (
+					<Post data={post} />
+				)
+			})} 		
 		</div>
 	);
 }

@@ -1,4 +1,4 @@
-const storiesList = [
+export const storiesList = [
 	{
 		userId: 1,
 		userName: "uday007",
