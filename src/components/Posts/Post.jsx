@@ -6,7 +6,7 @@ import secondpost from '../../assets/harishimage.jpg';
 import thirdpost from '../../assets/tharunimage.jpg';
 
 function Post({ data }) {
-	const { id, userId, postContent} = data;
+	const { id, userId } = data;
 	const currentUser = usersData[userId]
 	let posturl = "";
 	if(currentUser.userName == "the_dreamer_champ")
