@@ -2,7 +2,6 @@ import Header from "../Header/index";
 import "./home.css";
 import Stories from "../Stories/Stories";
 import PostsList from "../Posts/PostsList";
-import Footer from "../Footer/Footer";
 
 function Home() {
 	return (
@@ -10,7 +9,6 @@ function Home() {
 			<Header />
             <Stories />
             <PostsList />
-            <Footer />
 		</div>
 	);
 }
