@@ -1,13 +1,23 @@
+import { useState } from 'react';
 import "./posts.css";
-import { BsFillPersonFill, BsThreeDotsVertical } from "react-icons/bs";
+import { BsFillPersonFill, BsHeart, BsHeartFill, BsThreeDotsVertical } from "react-icons/bs";
 import { usersData } from "../../models/users";
 import firstpost from '../../assets/sushmaimage.jpg';
 import secondpost from '../../assets/harishimage.jpg';
 import thirdpost from '../../assets/tharunimage.jpg';
+import PostFooter from './PostFooter';
 
 function Post({ data }) {
-	const { id, userId } = data;
-	const currentUser = usersData[userId]
+	const [postData, setPostData] = useState(data);
+	const currentUser = usersData[postData.userId];
+
+	const handleClickLike = (isLiked) => {
+		setPostData({
+			...postData,
+			isLiked: !isLiked,
+		})
+	} 
+
 	let posturl = "";
 	if(currentUser.userName == "the_dreamer_champ")
 		posturl = firstpost;
@@ -15,8 +25,9 @@ function Post({ data }) {
 		posturl = secondpost;
 	else
 		posturl = thirdpost;
+
 	return (
-		<div className="post">
+		<div className="post" key={postData.id}>
             <div className="post-header">
 				<div className="header-left-content">
 					<span className="user-logo">
@@ -33,9 +44,7 @@ function Post({ data }) {
 			<div className="post-body">
 				<img src={posturl} height={300} width={500} alt='Image was not uploaded' />
 			</div>
-			<div className="post-footer">
-				// TODO - Venkat
-			</div>
+			<PostFooter isLiked={postData?.isLiked} handleClickLike={handleClickLike} />
 		</div>
 	);
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { BsFillChatRightTextFill, BsFillBellFill, BsFillCursorFill } from "react-icons/bs";
 import { Button } from "react-bootstrap";
 import './header.css';
-import logo from '../../assets/bolt-logo.jfif';
+// import logo from '../../assets/bolt-logo.jfif';
 
 const Header = () => {
 	return (

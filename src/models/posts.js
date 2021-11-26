@@ -2,7 +2,7 @@ export const postsData = [
     {
         id: 43832472,
         userId: 4500088,
-        postImage: "",
+        postImage: "../../../public/assets/sushmaimage.jpg",
         likes: [],
         isLiked: false,
         comments: [],
@@ -11,16 +11,16 @@ export const postsData = [
     {
         id: 43444472,
         userId: 9880000,
-        postImage: "",
+        postImage: "../../../public/assets/harishimage.jpg",
         likes: [],
-        isLiked: false,
+        isLiked: true,
         comments: [],
         postedTime: "",
     },
     {
         id: 37632472,
         userId: 7844322,
-        postImage: "",
+        postImage: "../../../public/assets/tharunimage.jpg",
         likes: [],
         isLiked: false,
         comments: [
