@@ -68,6 +68,7 @@ example: git checkout -b feature/11.Code_Setup_venkat
 - Venkat Reddy Nandyala
 - Kalyani Kapa
 - Sravani Tummalapudi
+- Gayathri Bandi
 
 ## What is the use of this project
 
