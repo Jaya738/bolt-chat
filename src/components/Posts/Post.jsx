@@ -1,10 +1,20 @@
 import "./posts.css";
 import { BsFillPersonFill, BsThreeDotsVertical } from "react-icons/bs";
 import { usersData } from "../../models/users";
+import firstpost from '../../assets/sushmaimage.jpg';
+import secondpost from '../../assets/harishimage.jpg';
+import thirdpost from '../../assets/tharunimage.jpg';
 
 function Post({ data }) {
 	const { id, userId } = data;
 	const currentUser = usersData[userId]
+	let posturl = "";
+	if(currentUser.userName == "the_dreamer_champ")
+		posturl = firstpost;
+	else if(currentUser.userName == "harish_btech")
+		posturl = secondpost;
+	else
+		posturl = thirdpost;
 	return (
 		<div className="post">
             <div className="post-header">
@@ -21,7 +31,7 @@ function Post({ data }) {
 				</span>
 			</div>
 			<div className="post-body">
-				{/* <img /> */} // TODO Sravani
+				<img src={posturl} height={300} width={500} alt='Image was not uploaded' />
 			</div>
 			<div className="post-footer">
 				// TODO - Venkat
