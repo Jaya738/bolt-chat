@@ -6,6 +6,9 @@ import firstpost from '../../assets/sushmaimage.jpg';
 import secondpost from '../../assets/harishimage.jpg';
 import thirdpost from '../../assets/tharunimage.jpg';
 import PostFooter from './PostFooter';
+import PostHeader from './PostHeader';
+import PostBody from'./PostBody';
+
 
 function Post({ data }) {
 	const [postData, setPostData] = useState(data);
@@ -27,23 +30,9 @@ function Post({ data }) {
 		posturl = thirdpost;
 
 	return (
-		<div className="post" key={postData.id}>
-            <div className="post-header">
-				<div className="header-left-content">
-					<span className="user-logo">
-						<BsFillPersonFill />
-					</span>
-					<span className="user-name">
-						{currentUser.userName}
-					</span>
-				</div>
-				<span className="action-menu">
-					<BsThreeDotsVertical />
-				</span>
-			</div>
-			<div className="post-body">
-				<img src={posturl} height={300} width={500} alt='Image was not uploaded' />
-			</div>
+		<div className="post">
+            <PostHeader currentUser={currentUser}/>
+			<PostBody posturl={posturl}/>
 			<PostFooter isLiked={postData?.isLiked} handleClickLike={handleClickLike} />
 		</div>
 	);
