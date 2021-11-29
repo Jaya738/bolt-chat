@@ -18,5 +18,12 @@ export const usersData = {
         id: 3874322,
         userName: "akhil_vuppala",
         profilePic: "",
+    },
+    9900088: {
+        id: 9900088,
+        userName: "explorer",
+        profilePic: "",
     }
 }
+
+export const currentUser = 9900088;
