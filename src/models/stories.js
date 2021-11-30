@@ -1,8 +1,6 @@
 export const storiesList = [
 	{
-		userId: 1,
-		userName: "uday007",
-		profilePic: "profiles/uday.png",
+		userId: 4500088,
 		seen: false,
 		activeStoryIndex: 0,
 		stories: [
@@ -25,13 +23,11 @@ export const storiesList = [
 				nextStory: null,
 			},
 		],
-		nextUser: 2,
+		nextUser: 7844322,
 		prevUser: null,
 	},
 	{
-		userId: 2,
-		userName: "sravs",
-		profilePic: "profiles/sravs.png",
+		userId: 7844322,
 		seen: false,
 		activeStoryIndex: 0,
 		stories: [
@@ -54,7 +50,31 @@ export const storiesList = [
 				nextStory: null,
 			},
 		],
-		nextUser: 2,
-		prevUser: null,
+		nextUser: 9880000,
+		prevUser: 4500088,
 	},
+	{
+		userId: 9880000,
+		seen: false,
+		activeStoryIndex: 0,
+		stories: [],
+		nextUser: 3874322,
+		prevUser: 7844322,
+	},
+	{
+		userId: 3874322,
+		seen: false,
+		activeStoryIndex: 0,
+		stories: [],
+		nextUser: 9900088,
+		prevUser: 9880000,
+	},
+	{
+		userId: 9900088,
+		seen: false,
+		activeStoryIndex: 0,
+		stories: [],
+		nextUser: null,
+		prevUser: 3874322,
+	}
 ];
