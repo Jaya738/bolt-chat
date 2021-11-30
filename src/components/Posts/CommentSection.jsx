@@ -16,6 +16,7 @@ const CommentSection = ({ comments = [], addNewComment = () => {} }) => {
 		<div className="comments">
             <div className="add-comment">
                 <input 
+                    className='add-comment-input'
                     placeholder="Add comment"
                     value={commentMessage}
                     onChange={handleInputChange}

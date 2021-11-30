@@ -71,8 +71,12 @@
 
 .post-footer-icons > .comment-button > .comment-text {
     margin-left: 8px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: normal;
+}
+
+.comments {
+    padding: 0px 16px;
 }
 
 .comments > .comment {
@@ -81,4 +85,29 @@
 
 .comments > .comment > .comment-msg {
     margin-left: 8px;
+}
+
+.comments > .add-comment {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comments > .add-comment > button {
+    background-color: #29487D;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 24px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+input {
+    border:0;
+    outline:0;
+}
+input:focus {
+    outline:none !important;
 }
