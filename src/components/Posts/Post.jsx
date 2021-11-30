@@ -14,6 +14,7 @@ import CommentSection from './CommentSection';
 function Post({ data }) {
 	const [postData, setPostData] = useState(data);
 	const currentUser = usersData[postData.userId];
+	const [showInput, setShowInput] = useState(false);
 
 	const handleClickLike = (isLiked) => {
 		setPostData({
@@ -22,7 +23,13 @@ function Post({ data }) {
 		})
 	} 
 
+	const handleClickComment= () => {
+		setShowInput(true)
+		
+	}
+
 	const addNewComment = (userId, msg) => {
+		
 		setPostData({
 			...postData,
 			comments: [
@@ -37,6 +44,7 @@ function Post({ data }) {
 				...postData.comments
 			]
 		})
+		setShowInput(false)
 	}
 
 	let posturl = "";
@@ -51,8 +59,8 @@ function Post({ data }) {
 		<div className="post">
             <PostHeader currentUser={currentUser}/>
 			<PostBody posturl={posturl}/>
-			<PostFooter isLiked={postData?.isLiked} handleClickLike={handleClickLike} />
-			<CommentSection comments={postData?.comments} addNewComment={addNewComment} />
+			<PostFooter isLiked={postData?.isLiked} handleClickLike={handleClickLike} handleClickComment={handleClickComment} />
+			<CommentSection comments={postData?.comments} addNewComment={addNewComment} showInput={showInput} />
 		</div>
 	);
 }
