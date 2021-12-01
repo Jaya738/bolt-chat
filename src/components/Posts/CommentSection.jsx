@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Post from './Post';
 import { usersData, currentUser } from "../../models/users";
 import { propTypes } from "react-bootstrap/esm/Image";
+import {BsFillPersonFill} from 'react-icons/bs';
 
 const CommentSection = ({ comments = [], addNewComment = () => {}, showInput=false }) => {
     const [commentMessage, setCommentMessage] = useState('');
@@ -16,9 +17,11 @@ const CommentSection = ({ comments = [], addNewComment = () => {}, showInput=fal
 	return (
 		<div className="comments">
             {showInput ? 
-            <div className="add-comment">  
+            <div className="add-comment"> 
+            <BsFillPersonFill /> 
                 <input 
                     className='add-comment-input'
+            
                     placeholder="Add comment"
                     value={commentMessage}
                     onChange={handleInputChange}
@@ -33,6 +36,7 @@ const CommentSection = ({ comments = [], addNewComment = () => {}, showInput=fal
                 const userData = usersData[comment?.userId];
                 return (
                     <div className="comment">
+                        <BsFillPersonFill />
                         <div className="user-name">
                             <b>{userData?.userName}</b>:
                         </div>
