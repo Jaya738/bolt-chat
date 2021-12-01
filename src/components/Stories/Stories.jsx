@@ -1,11 +1,12 @@
 import "./stories.css";
 import StoryItem from "./StoryItem";
+import { storiesList } from '../../models/stories';
 
 function Stories() {
-    const storyData = [];
 	return (
 		<div className="stories">
-            {storyData.map(story => (
+            <StoryItem data={{}} />
+            {storiesList.map(story => (
                 <StoryItem data={story} />
             ))}
 		</div>

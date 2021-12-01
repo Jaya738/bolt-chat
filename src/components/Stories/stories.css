@@ -1,0 +1,45 @@
+.stories {
+    margin: 24px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.story-item {
+    width: 100px;
+    margin: 0px 4px;
+}
+
+.story-item > svg {
+    width: 100px;
+    height: 100px;
+    color: #29487D;
+}
+.story-post {
+    display: flex;
+    flex-direction: column;
+
+}
+.story-post > .user-logo {
+    border-radius: 50%;
+    font-size: 44px;
+    width: 100px;
+    height: 100px;
+    background-color: #29487D;
+    color: white;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.story-post > .story-user-name {
+    margin-top: 4px;
+    font-size: 12px;
+    width: 100px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+}
