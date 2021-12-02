@@ -7,6 +7,7 @@ import Notifications from "./components/Notifications/Notifications";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
 import { paths } from "./routes/paths";
+import ProfileDashboard from "./components/Footer/ProfileDashboard";
 
 function App() {
 	return (
@@ -19,6 +20,11 @@ function App() {
 				<Route
 					path={paths.home}
 					component={Home}
+					exact={true}
+				/>
+				<Route
+					path={paths.profile}
+					component={ProfileDashboard}
 					exact={true}
 				/>
 			</Switch>
