@@ -1,0 +1,24 @@
+.profile-dashboard{
+    background-color:#29487D;
+    display:flex;
+    align-items: center;
+    color:white;
+}
+.profile-dashboard > .profile-logo > svg {
+    width:80px;
+    height:80px;
+    padding:10px;
+}
+
+.profile-right {
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+}
+.profile-right-items{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+}
+
